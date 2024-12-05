@@ -46,11 +46,11 @@ public class Main {
                         }
 
                         //array para imprimir asteriscos
-                        for (int asterisco = 0; asterisco < (linea *2) + 1; asterisco++) {
+                        for (int asterisco = 0; asterisco < (linea * 2) + 1; asterisco++) {
                             System.out.print("*");
                         }
 
-                    System.out.println("");
+                        System.out.println("");
                     }
 
                     break;
@@ -63,10 +63,24 @@ public class Main {
                      * |  *===*
                      * | *=====*
                      * |*=======*
+
+
+                     //bucle para imprimir lineas
+                     for (int linea = 0; linea < filas; linea++) {
+
+                     //array para imprimir espacios
+                     for (int espacios = 0; espacios < (filas - linea - 1); espacios++) {
+                     System.out.print(" ");
+                     }
+
+                     //array para imprimir asteriscos
+                     for (int asterisco = 0; asterisco < (linea * 2) + 1; asterisco++) {
+                     System.out.print("*");
+                     }
+
+                     System.out.println("");
+                     }
                      */
-
-
-
 
                     break;
                 case 3:
@@ -80,6 +94,22 @@ public class Main {
                      * |=========
                      */
 
+                    //bucle para imprimir lineas
+                    for (int linea = 0; linea < filas; linea++) {
+
+                        //array para imprimir espacios
+                        for (int espacios = 0; espacios < (filas - linea - 1); espacios++) {
+                            System.out.print(" ");
+                        }
+
+                        //array para imprimir asteriscos
+                        for (int asterisco = 0; asterisco < (linea * 2) + 1; asterisco++) {
+
+                            System.out.print("*");
+                        }
+
+                        System.out.println("");
+                    }
 
                     break;
                 case 4:
@@ -115,7 +145,7 @@ public class Main {
                         }
 
                         //array para imprimir asteriscos
-                        for (int asterisco = 0; asterisco < (filas *2) - ((linea *2) + 1); asterisco++) {
+                        for (int asterisco = 0; asterisco < (filas * 2) - ((linea * 2) + 1); asterisco++) {
                             System.out.print("*");
                         }
 
