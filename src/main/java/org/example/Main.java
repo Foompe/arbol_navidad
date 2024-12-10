@@ -17,13 +17,15 @@ public class Main {
         while (continuar) {
 
             //Entrada del usuario del tipo de árbol
-            System.out.println("\nElige tipo de árbol: \n" +
-                    " 1 - Árbol de navidad\n" +
-                    " 2 - Árbol con bolas de navidad\n" +
-                    " 3 - Árbol de espumillon\n" +
-                    " 4 - Árbol especial\n" +
-                    " 5 - Árbol de navidad invertido\n" +
-                    " 6 - Salir");
+            System.out.println("""
+                               
+                               Elige tipo de \u00e1rbol: 
+                                1 - \u00c1rbol de navidad
+                                2 - \u00c1rbol con bolas de navidad
+                                3 - \u00c1rbol de espumillon
+                                4 - \u00c1rbol especial
+                                5 - \u00c1rbol de navidad invertido
+                                6 - Salir""");
 
             int tipoArbol = sc.nextInt();
 
