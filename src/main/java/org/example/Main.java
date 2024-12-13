@@ -20,7 +20,7 @@ public class Main {
             System.out.println("""
                                
                                Elige tipo de \u00e1rbol: 
-                                1 - \u00c1rbol de navidad
+                                1 - Árbol de navidad
                                 2 - \u00c1rbol con bolas de navidad
                                 3 - \u00c1rbol de espumillon
                                 4 - \u00c1rbol especial
@@ -60,40 +60,41 @@ public class Main {
                     System.out.println("Has escogido árbol con bolas de navidad con " + filas + " filas.\n");
                     /**
                      * | Objetivo:
-                     * |    *
-                     * |   *=*
-                     * |  *===*
-                     * | *=====*
-                     * |*=======*
+                     * |*********
+                     * |****a****
+                     * |***aaa***
+                     * |**aaaaa**
+                     * |*aaaaaaa*
+                     * |*********
+                     * */
+                    
+                    //bucle para imprimir lineas         
+                    for (int linea = 0; linea < filas; linea++) {
 
+                        //array para imprimir espacios
+                        for (int espacios = 0; espacios < (filas - linea - 1); espacios++) {
+                            System.out.print("*");
+                        }
 
-                     //bucle para imprimir lineas
-                     for (int linea = 0; linea < filas; linea++) {
+                        //array para imprimir asteriscos
+                        for (int asterisco = 0; asterisco < (linea * 2) + 1; asterisco++) {
+                            System.out.print("*");
+                        }
 
-                     //array para imprimir espacios
-                     for (int espacios = 0; espacios < (filas - linea - 1); espacios++) {
-                     System.out.print(" ");
-                     }
-
-                     //array para imprimir asteriscos
-                     for (int asterisco = 0; asterisco < (linea * 2) + 1; asterisco++) {
-                     System.out.print("*");
-                     }
-
-                     System.out.println("");
-                     }
-                     */
-
+                        System.out.println("");
+                    }
+               
                     break;
                 case 3:
                     System.out.println("Has escogido árbol de espumillon con " + filas + " filas.\n");
                     /**
                      * | Objetivo:
-                     * |    *
-                     * |   ===
-                     * |  +++++
-                     * | *******
-                     * |=========
+                     * |     *
+                     * |    **
+                     * |   *+*
+                     * |  *++*
+                     * | *+++*
+                     * |*++++*
                      */
 
                     //bucle para imprimir lineas
@@ -118,13 +119,24 @@ public class Main {
                     System.out.println("Has escogido árbol de navidad especial con " + filas + " filas.\n");
                     /**
                      * | Objetivo:
-                     * |    *
-                     * |   *=*
-                     * |  *=+=*
-                     * | *=+*+=*
-                     * |*=+*=*+=*
+                     * |     *
+                     * |    +++
+                     * |   =====
+                     * |  *******
+                     * | +++++++++
+                     * |===========
                      */
-
+                   // n son las lineas
+                            
+                   /** for (int i = 0; i < n; i++) {
+                        for(int j = 1; j <= n-i; j++) {
+                            System.out.print(" ");
+                        }
+                        for ( int j = 0; j < 2*i+1; j++) {
+                            
+                        }
+                    }
+*/
 
                     break;
                 case 5:
